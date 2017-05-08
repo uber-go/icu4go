@@ -1,0 +1,5 @@
+package: github.com/uber-go/icu4go
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
