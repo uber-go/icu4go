@@ -1,6 +1,6 @@
 sudo: false
 language: go
-go_import_path: go.uber.org/atomic
+go_import_path: go.uber.org/icu4go
 
 go:
   - 1.7

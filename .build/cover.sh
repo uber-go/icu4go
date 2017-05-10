@@ -3,7 +3,7 @@
 set -e
 
 COVER=cover
-ROOT_PKG=go.uber.org/atomic
+ROOT_PKG=go.uber.org/icu4go
 
 if [[ -d "$COVER" ]]; then
 	rm -rf "$COVER"
