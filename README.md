@@ -1,4 +1,4 @@
-# icu4go [![Build Status][ci-img]][ci] [![Coverage Status][cov-img]][cov]
+# icu4go
 
 ## A go binding for icu4c library
 
