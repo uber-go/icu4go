@@ -1,7 +1,4 @@
-before_install:
-  - sudo apt-get install -y libicu52
-
-sudo: required
+sudo: false
 language: go
 
 env:
