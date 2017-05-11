@@ -1,4 +1,6 @@
-## ICU4GO - A go binding for icu4c library
+# icu4go [![Build Status][ci-img]][ci] [![Coverage Status][cov-img]][cov]
+
+## A go binding for icu4c library
 
 This library provides functions for locale, date, time, currency and number formatting using icu4c.
 We will add more functions as and when needed. In order to use this library you must install icu4c library

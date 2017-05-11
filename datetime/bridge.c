@@ -22,6 +22,7 @@
 
 #include <unicode/udat.h>
 #include <unicode/ustring.h>
+#include <unicode/uvernum.h>
 #include <string.h>
 
 const UErrorCode formatDateTime(double epochMillis,
@@ -41,8 +42,13 @@ const UErrorCode formatDateTime(double epochMillis,
     u_uastrcpy(patternUchar, pattern);
 
     UDateFormat* dfmt = udat_open(
-        UDAT_PATTERN,   // The dateStyle, UDAT_PATTERN means take it from the pattern supplied
-        UDAT_PATTERN,   // The timeStyle, UDAT_PATTERN means take it from the pattern supplied
+        #if U_ICU_VERSION_MAJOR_NUM >= 5
+            UDAT_PATTERN,   // The dateStyle, UDAT_PATTERN means take it from the pattern supplied
+            UDAT_PATTERN,   // The timeStyle, UDAT_PATTERN means take it from the pattern supplied
+        #else
+            UDAT_IGNORE,
+            UDAT_IGNORE,
+        #endif
         localeId,       // The localeId
         tzUchar,        // The timezone Id
         -1,             // The timezone Id len ( -1 because tzUchar is null terminated )
