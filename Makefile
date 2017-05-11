@@ -1,4 +1,5 @@
-export ICU_LIB = /usr/local/opt/icu4c
+# Below line is for Mac
+# export ICU_LIB = /usr/local/opt/icu4c
 export CGO_CFLAGS += -I${ICU_LIB}/include
 export CGO_LDFLAGS += -L${ICU_LIB}/lib -licui18n -licuuc -licudata
 
