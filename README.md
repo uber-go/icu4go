@@ -1,4 +1,4 @@
-# icu4go
+# icu4go [![Build Status][ci-img]][ci] [![Coverage Status][cov-img]][cov]
 
 ## A go binding for icu4c library
 
@@ -100,3 +100,14 @@ GetPattern = func(string, FormatType, bool) (string, error) {
 datetime.Format("de-DE", time.Now(), datetime.Full, "UTC")
 > 02.01.17, 12:35
 ```
+
+## Development Status
+Stable.
+
+<hr>
+Released under the [MIT License](LICENSE.txt).
+
+[ci-img]: https://travis-ci.org/uber-go/icu4go.svg?branch=master
+[ci]: https://travis-ci.org/uber-go/icu4go
+[cov-img]: https://coveralls.io/repos/github/uber-go/icu4go/badge.svg?branch=master
+[cov]: https://coveralls.io/github/uber-go/icu4go?branch=master
