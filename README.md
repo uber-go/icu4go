@@ -104,7 +104,7 @@ datetime.Format("de-DE", time.Now(), datetime.Full, "UTC")
 ## Development Status
 Stable.
 
-<hr>
+## Annotations
 Released under the [MIT License](LICENSE.txt).
 
 [ci-img]: https://travis-ci.org/uber-go/icu4go.svg?branch=master
