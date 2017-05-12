@@ -108,6 +108,6 @@ Stable.
 Released under the [MIT License](LICENSE.txt).
 
 [ci-img]: https://travis-ci.org/uber-go/icu4go.svg?branch=master
-[ci]: https://travis-ci.org/uber-go/icu4go
+[ci]: https://travis-ci.org/uber-go/icu4go?branch=master
 [cov-img]: https://coveralls.io/repos/github/uber-go/icu4go/badge.svg?branch=master
 [cov]: https://coveralls.io/github/uber-go/icu4go?branch=master
